@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#273036" fill-opacity="1" d="M0,192L60,170.7C120,149,240,107,360,122.7C480,139,600,213,720,245.3C840,277,960,267,1080,261.3C1200,256,1320,256,1380,256L1440,256L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
+    <header>
+        <h1>APEX</h1>
+        <h2>CODE MORSE</h2>
+    </header>
+    <img src="image.png" alt="">
+    <input type="hidden" value="texttomorse">
+    <textarea rows="10" cols="70" id="text" placeholder="Saisissez un text normale  en utilisant uniquement les lettres (a à z) et les chiffres (0 à 9)."></textarea>
+    <button id="btn" class="morse">Code morse</button>
+    <div></div>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+  $(document).ready(function() {
+    $('svg').hover(
+      function() {
+        $('img').attr('src', 'image2.png');
+      },
+      function() {
+        $('img').attr('src', 'image.png');
+      }
+    );
+  });
+</script>
+    <script src="script.js"></script>
+</body>
+</html>
